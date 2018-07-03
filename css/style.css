@@ -1,0 +1,147 @@
+.body {
+  font-size: 16px;
+}
+
+.icon {
+  height: 3em;
+  width: auto;
+}
+
+.title {
+  text-decoration: none;
+  color: black;
+  font-size: 2em;
+}
+
+/* Base styles that apply to all menus */
+
+.menu ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	background: white;
+}
+
+.menu li a {
+	display: block;
+	text-decoration: none;
+	color: black;
+}
+
+.menu li a:hover {
+	background: blue;
+}
+
+/* from fotomatic */
+/* remove background-color and bottom border */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 4em;
+  border-bottom: solid 1px #c6c1c1;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header .content {
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* do i need a height to scale the logo?  */
+header .left {
+  display: flex;
+  align-items: center;
+  padding-left: 1.5em;
+}
+header .logo {
+  flex: 1;
+}
+
+nav a {
+  font-size: 1rem;
+  color: #4a4a4a;
+}
+
+/* Styles for Single Level Menu */
+
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1em;
+}
+
+.menu li {
+    flex: 1 0 auto;
+    text-align: center;
+    padding: .6em .5em;
+}
+
+@media screen and (min-width: 680px) {
+.mobile {
+  display: none;
+}
+
+header .content {
+  display: flex;
+}
+}
+
+/* Styles for mobile */
+
+@media screen and (max-width: 680px) {
+.desktop {
+  display: none
+}
+
+ nav .menu {
+   display: flex;
+   justify-content: space-around;
+   width: 100%;
+}
+
+ .menu ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu li img {
+    margin: auto;
+}
+}
+
+/* container below the header */
+
+.main-content {
+  position: relative;
+  top: 4rem; /* To offset for fixed header. */
+}
+
+
+/* footer */
+/* adjust color of border-top */
+/* remove border-bottom */
+/* change copy to symbol */
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 1.5em 3em 1.5em;
+  border-top: 1px solid green;
+  border-bottom: 1px solid green;
+  align-items: center;
+}
+
+.right {
+  word-spacing: 1rem;
+}
+
+@media screen and (max-width: 680px) {
+  footer {
+    justify-content: center;
+  }
+}
