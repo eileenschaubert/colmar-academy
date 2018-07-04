@@ -5,6 +5,9 @@
   font-size: 16px;
 }
 
+a {
+  text-decoration: none;
+}
 .icon {
   height: 3em;
   width: auto;
@@ -194,12 +197,10 @@ header .content {
 .card-vertical {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   border: 1px solid blue;
 }
 
 #testimonial {
-  /* width: 60%; */
   margin: 0 1.5em;
 }
 
@@ -223,15 +224,6 @@ header .content {
 /* mobile images are not flexing into the proper container size */
 
 
-.card-information {
-  display: flex;
-  border: 1px solid purple;
-}
-
-.card-information .image-container {
-  width: 30%;
-}
-
 .row-container {
   display: flex;
 }
@@ -242,10 +234,21 @@ header .content {
   justify-content: space-between;
 }
 
-@media screen and (max-width: 680px;) {
-    .test {
-      flex-direction: column;
-    }
+@media screen and (min-width: 681px) {
+  .cards-information .image-container {
+    width: 30%;
+  }
+  .cards-information .hero-content {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .cards-information {
+    width: 100%;
+  }
+
+
 }
 
 /* footer */
