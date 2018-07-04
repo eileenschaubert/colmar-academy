@@ -189,27 +189,57 @@ header .content {
 /* is overriding the desktop media query from earlier, must be because it's flex */
 /* used an id of testimonial to make it work */
 /* play with margin on #testimonial once the other stack of cards is placed */
-
+/* need to determine at which level the 60% goes on to align with photo */
 
 .card-vertical {
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
+  border: 1px solid blue;
 }
 
 #testimonial {
-  width: 60%;
+  /* width: 60%; */
+  margin: 0 1.5em;
 }
 
 .card-vertical img {
-  padding: 2em 1.5em;
+  padding: 2em 0;
 }
-
 
 @media screen and (max-width: 680px) {
 #testimonial {
     display: none;
   }
+}
+
+/* Vertical stack of horizontal cards */
+/* fix size of images to be consistent at 30% */
+/* may need to do a flex property for the 3rd card image */
+/* adjust the size of the cards within the stack at 33% */
+/* card image of top card is aligned with top of vertical card image */
+/* add padding, etc around images and text */
+/* change to mobile image sizes with media query stretches to container*/
+/* mobile images are not flexing into the proper container size */
+
+
+.card-horizontal {
+  display: flex;
+  border: 1px solid purple;
+}
+
+.card-horizontal .image-container {
+  width: 30%;
+}
+
+.row-container {
+  display: flex;
+}
+
+.cards-horizontal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 
