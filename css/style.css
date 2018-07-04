@@ -189,7 +189,7 @@ header .content {
 /* is overriding the desktop media query from earlier, must be because it's flex */
 /* used an id of testimonial to make it work */
 /* play with margin on #testimonial once the other stack of cards is placed */
-/* need to determine at which level the 60% goes on to align with photo */
+/* need to determine at which level the 60% width goes on to align with photo */
 
 .card-vertical {
   display: flex;
@@ -223,12 +223,12 @@ header .content {
 /* mobile images are not flexing into the proper container size */
 
 
-.card-horizontal {
+.card-information {
   display: flex;
   border: 1px solid purple;
 }
 
-.card-horizontal .image-container {
+.card-information .image-container {
   width: 30%;
 }
 
@@ -236,12 +236,17 @@ header .content {
   display: flex;
 }
 
-.cards-horizontal {
+.cards-information {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+@media screen and (max-width: 680px;) {
+    .test {
+      flex-direction: column;
+    }
+}
 
 /* footer */
 /* adjust color of border-top */
