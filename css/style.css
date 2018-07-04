@@ -1,3 +1,6 @@
+/* refactor all a to be text-decoration: none */
+/* refactor gather up all display:flex items */
+
 .body {
   font-size: 16px;
 }
@@ -27,7 +30,7 @@
 	text-decoration: none;
 	color: black;
 }
-
+/* change background color */
 .menu li a:hover {
 	background: blue;
 }
@@ -39,6 +42,8 @@ header {
   top: 0;
   width: 100%;
   height: 4em;
+  overflow: hidden;
+  z-index: 1;
   border-bottom: solid 1px #c6c1c1;
   background-color: lightblue;
   display: flex;
@@ -92,11 +97,12 @@ header .content {
 }
 }
 
+
 /* Styles for mobile */
 
 @media screen and (max-width: 680px) {
 .desktop {
-  display: none
+  display: none;
 }
 
  nav .menu {
@@ -116,10 +122,94 @@ header .content {
 }
 
 /* container below the header */
+/* make sure all content flows underneath the fixed header */
 
 .main-content {
   position: relative;
   top: 4rem; /* To offset for fixed header. */
+}
+
+/* hero styling */
+/* remove border of container*/
+/* adjust width of all items to match spec */
+/* style the margins and borders to match spec */
+/* add background color */
+/* figure out font family */
+/* center hero-content vertically */
+/*  */
+
+.hero-cta {
+  display: flex;
+  border: 1px solid green;
+}
+
+.hero-cta .image-container {
+  width: 60%;
+}
+
+.hero-cta img {
+  width: 100%;
+  padding: 2em 1.5em;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 25%;
+  margin: auto;
+}
+
+@media screen and (max-width: 680px) {
+  .hero-cta {
+    flex-direction: column;
+  }
+
+  .hero-cta .image-container {
+    margin: auto;
+    width: 100%;
+  }
+
+  .hero-cta img {
+    padding: 0;
+    margin: auto;
+  }
+
+  .hero-content {
+    padding: 2em 1em;
+    margin: auto;
+    width: auto;
+  }
+}
+
+/* Testimonial Card */
+/* can be refactored for mobile display:none and image container width */
+/* can't comment out the display:none here for some reason, the card-vertical */
+/* is overriding the desktop media query from earlier, must be because it's flex */
+/* used an id of testimonial to make it work */
+/* play with margin on #testimonial once the other stack of cards is placed */
+
+
+.card-vertical {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+#testimonial {
+  width: 60%;
+}
+
+.card-vertical img {
+  padding: 2em 1.5em;
+}
+
+
+@media screen and (max-width: 680px) {
+#testimonial {
+    display: none;
+  }
 }
 
 
