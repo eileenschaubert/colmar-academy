@@ -247,9 +247,38 @@ header .content {
   .cards-information {
     width: 100%;
   }
+}
 
+/* learning / course section 2 rows of 3 cards for desktop */
+/* vertical stack of links for mobile */
+/* vertical stacks are already working just need to be styled */
+/* Add h2 to the section */
+#learning .hero-cta {
+  flex-direction: column;
+  flex: 0 0 30%;
+}
+
+#learning {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#learning .image-container {
+  width: 100%;
+  margin: 0;
+}
+#learning img {
+  padding: 0;
+}
+
+@media screen and (max-width: 680px) {
+  #learning {
+    flex-direction: column;
+  }
 
 }
+
+
 
 /* footer */
 /* adjust color of border-top */
