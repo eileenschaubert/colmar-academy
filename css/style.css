@@ -19,6 +19,9 @@ a {
   font-size: 2em;
 }
 
+.center {
+  text-align: center;
+}
 /* Base styles that apply to all menus */
 
 .menu ul {
@@ -253,6 +256,10 @@ header .content {
 /* vertical stack of links for mobile */
 /* vertical stacks are already working just need to be styled */
 /* Add h2 to the section */
+/* adjust widths of cards to be 1/3 with appropriate padding */
+/* fix fonts and add more space for the text */
+/* refactor to use classes and not id's if possible */
+
 #learning .hero-cta {
   flex-direction: column;
   flex: 0 0 30%;
@@ -275,9 +282,27 @@ header .content {
   #learning {
     flex-direction: column;
   }
-
 }
 
+/* thesis section */
+/* go back and refactor once this is close */
+/* resize the various cards */
+
+#video video {
+  width: 100%;
+}
+
+@media screen and (max-width: 680px) {
+  #thesis .desktop {
+    display: none;
+  }
+  #video .card-container {
+    display: flex;
+  }
+  #video video {
+    width: 100vw;
+  }
+}
 
 
 /* footer */
