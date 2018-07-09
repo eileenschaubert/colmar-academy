@@ -162,21 +162,25 @@ img {
 }
 
 
-
-
-
 /* hero styling */
-/* remove border of container*/
 /* adjust width of all items to match spec */
-/* style the margins and borders to match spec */
-/* add background color */
-/* figure out font family */
-/* center hero-content vertically */
+/* style the margins and borders of text box to match spec */
 /* adjust button color */
 
 .hero-cta {
   display: flex;
-  border: 1px solid green;
+}
+
+@media screen and (min-width: 681px) {
+  #hero .image-container {
+    width: 60%;
+    margin: 1rem 0 1rem .5rem;
+  }
+}
+
+
+#hero {
+  background-color: lightgray;
 }
 
 .hero-cta .image-container {
@@ -185,15 +189,18 @@ img {
 
 .hero-cta img {
   width: 100%;
-  padding: 2rem 1.5rem;
+  /* padding: 2rem 1.5rem; */
 }
+
+
 
 .hero-content {
   display: flex;
   flex-direction: column;
   text-align: left;
   justify-content: center;
-  margin-left: 1rem;
+  margin-left: .5rem;
+  margin-right: 1rem;
 }
 button {
   width: 75%;
@@ -248,7 +255,7 @@ button {
 }
 
 #testimonial {
-  margin: 0 1.5rem;
+  /* margin: 0 1.5rem; */
 }
 
 .card-vertical img {
@@ -315,15 +322,30 @@ button {
 /* adjust widths of cards to be 1/3 with appropriate padding */
 /* fix fonts and add more space for the text */
 /* refactor to use classes and not id's if possible */
+#courses {
+  background-color: lightgray;
+}
+#courses h2 {
+  padding-top: 2rem;
+  margin: 0;
+}
 
 #learning .hero-cta {
   flex-direction: column;
-  flex: 0 0 30%;
+  flex: 1 0 25%;
+  background-color: white;
+  margin: 1rem;
+}
+
+#learning .hero-content {
+  width: auto;
+  margin: 1rem;
 }
 
 #learning {
   flex-direction: row;
   flex-wrap: wrap;
+  padding: 1rem 3rem 1rem;
 }
 
 #learning .image-container {
@@ -338,20 +360,42 @@ button {
 @media screen and (max-width: 680px) {
   #learning {
     flex-direction: column;
+    padding: 1rem 0;
   }
+
+ #courses {
+   background-color: white;
+ }
+ #learning .hero-content {
+    background-color: lightgray;
+    margin: 0;
+ }
+
+
 }
 
 /* thesis section */
 /* go back and refactor once this is close */
 /* resize the various cards */
 
+.card-video {
+  padding: .5rem;
+}
 #video video {
   width: 100%;
+}
+
+#video .card-content{
+  padding: 1rem;
 }
 
 @media screen and (max-width: 680px) {
   #thesis .desktop {
     display: none;
+  }
+
+  #video .image-container {
+    padding: 0;
   }
   #video .card-container {
     display: flex;
@@ -359,6 +403,11 @@ button {
   #video video {
     width: 100vw;
   }
+  .card-video {
+    padding: 0;
+  }
+
+
 }
 
 
