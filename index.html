@@ -5,225 +5,221 @@
     <title>Colmar Academy</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
   </head>
   <body>
 
-  <header>
+    <header>
+      <!-- Header / Menu -->
+        <section class="nav-bar content">
+          <div class="left">
+            <img class="desktop icon" src="./images/ic-logo.svg" alt="logo">
+            <a href="index.html" class="desktop title"><span class="name">COLMAR</span>ACADEMY</a>
+          </div>
+          <nav class="desktop menu" role="navigation">
+            <ul>
+              <li><a href="#">On Campus</a></li>
+              <li><a href="#">Online</a></li>
+              <li><a href="#">For Companies</a></li>
+              <li><a href="#">Sign In</a></li>
+            </ul>
+          </nav>
+        </section> <!-- nav-bar -->
+        <section class="nav-bar content">
+          <nav class="mobile menu" role="navigation">
+            <ul>
+              <li><a href="#"><img class="icon" src="./images/ic-logo.svg"></a></li>
+              <li><a href="#"><img class="icon" src="./images/ic-on-campus.svg"></a></li>
+              <li><a href="#"><img class="icon" src="./images/ic-online.svg"></a></li>
+              <li><a href="#"><img class="icon" src="./images/ic-login.svg"></a></li>
+            </ul>
+          </nav>
+        </section>
+    </header>
 
-    <!-- Header / Menu -->
-      <section class="nav-bar content">
-        <div class="left">
-          <img class="desktop icon" src="./images/ic-logo.svg" alt="logo">
-          <a href="index.html" class="desktop title">Colmar Academy</a>
-        </div>
-        <nav class="desktop menu" role="navigation">
-          <ul>
-            <li><a href="#">On Campus</a></li>
-            <li><a href="#">Online</a></li>
-            <li><a href="#">For Companies</a></li>
-            <li><a href="#">Sign In</a></li>
-          </ul>
-        </nav>
-      </section> <!-- nav-bar -->
-      <section class="nav-bar content">
-        <nav class="mobile menu" role="navigation">
-          <ul>
-            <li><a href="#"><img class="icon" src="./images/ic-logo.svg"></a></li>
-            <li><a href="#"><img class="icon" src="./images/ic-on-campus.svg"></a></li>
-            <li><a href="#"><img class="icon" src="./images/ic-online.svg"></a></li>
-            <li><a href="#"><img class="icon" src="./images/ic-login.svg"></a></li>
-          </ul>
-        </nav>
-      </section>
-  </header>
+    <!-- main content of site -->
+    <section class="main-content">
 
-
-  <section class="main-content">
-
-  <section class="hero-cta">
-    <div class="image-container">
-      <img src="./images/banner.jpg" alt="students reading books">
-    </div>
-    <div class="hero-content">
-      <h1>Learn something new everyday</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-      <button type="button" name="button">Start here</button>
-    </div>
-  </section>
-
-  <div class="row-container">
-
-  <!-- vertical card shown only on desktop -->
-    <div class="card-container" id="testimonial">
-      <section class="desktop card-vertical">
-        <div class="image-container">
-          <img src="./images/information-main.jpg" alt="a student reading a book">
-        </div>
-        <div class="card-content">
-          <h1>It doesn't hurt to keep practicing</h1>
-          <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-          <p>Emanuel, Sr Strategist at Hiring.com</p>
-        </div>
-      </section>
-    </div>
-
-  <!-- 3 information cards in a vertical stack -->
-    <div class="cards-information">
+      <!-- top hero banner with call to action -->
       <section class="hero-cta">
         <div class="image-container">
-          <img class="desktop" src="./images/information-orientation.jpg" alt="students walking on trail">
-          <img class="mobile" src="./images/information-orientation-mobile.jpg" alt="students walking on trail">
+          <img src="./images/banner.jpg" alt="students reading books">
         </div>
         <div class="hero-content">
-          <h3>Orientation date</h3>
-          <p>Tues 10/11 & Wed 10/12: 8am - 3pm</p>
-          <a href="#">Read more</a>
+          <h1>Learn something new everyday</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <button type="button" name="button">Start here</button>
         </div>
       </section>
-      <section class="hero-cta">
-        <div class="image-container">
-          <img class="desktop" src="./images/information-campus.jpg" alt="students in study hall">
-          <img class="mobile" src="./images/information-campus-mobile.jpg" alt="students in study hall">
-        </div>
-        <div class="hero-content">
-          <h3>Our campus</h3>
-          <p>Find which campus is close by you</p>
-          <a href="#">Read more</a>
-        </div>
-      </section>
-      <section class="hero-cta">
-        <div class="image-container">
-          <img class="desktop" src="./images/information-guest-lecture.jpg" alt="Oliver Sack">
-          <img class="mobile" src="./images/information-guest-lecture-mobile.jpg" alt="Oliver Sack">
-        </div>
-        <div class="hero-content">
-          <h3>Our guest lecture</h3>
-          <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-          <a href="#">Read more</a>
-        </div>
-      </section>
-    </div>
 
-  </div>
+      <!-- testimonial and campus information -->
+      <div class="row-container">
 
-  <h2 class="center">Start learning</h2>
+        <!-- vertical testimonial card shown only on desktop -->
+        <div class="card-container" id="testimonial">
+          <section class="desktop card-vertical">
+            <div class="image-container">
+              <img src="./images/information-main.jpg" alt="a student reading a book">
+            </div>
+            <div class="card-content">
+              <h1>It doesn't hurt to keep practicing</h1>
+              <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+              <p>Emanuel, Sr Strategist at Hiring.com</p>
+            </div>
+          </section>
+        </div>
 
-  <!-- 6 learning cards in two rows -->
-    <div class="cards-information" id="learning">
-      <section class="hero-cta">
-        <div class="image-container">
-          <img class="desktop" src="./images/course-software.jpg" alt="computer screens with code">
+        <!-- 3 campus information cards in a vertical stack; image files change based on screen size -->
+        <div class="cards-information" id="campus-info">
+          <section class="hero-cta">
+            <div class="image-container">
+              <img class="desktop" src="./images/information-orientation.jpg" alt="students walking on trail">
+              <img class="mobile" src="./images/information-orientation-mobile.jpg" alt="students walking on trail">
+            </div>
+            <div class="hero-content">
+              <h3>Orientation date</h3>
+              <p>Tues 10/11 & Wed 10/12: 8am - 3pm</p>
+              <a href="#">Read more</a>
+            </div>
+          </section>
+          <section class="hero-cta">
+            <div class="image-container">
+              <img class="desktop" src="./images/information-campus.jpg" alt="students in study hall">
+              <img class="mobile" src="./images/information-campus-mobile.jpg" alt="students in study hall">
+            </div>
+            <div class="hero-content">
+              <h3>Our campus</h3>
+              <p>Find which campus is close by you</p>
+              <a href="#">Read more</a>
+            </div>
+          </section>
+          <section class="hero-cta">
+            <div class="image-container">
+              <img class="desktop" src="./images/information-guest-lecture.jpg" alt="Oliver Sack">
+              <img class="mobile" src="./images/information-guest-lecture-mobile.jpg" alt="Oliver Sack">
+            </div>
+            <div class="hero-content">
+              <h3>Our guest lecture</h3>
+              <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+              <a href="#">Read more</a>
+            </div>
+          </section>
         </div>
-        <div class="hero-content">
-          <h3>Software engineering</h3>
-          <p class="desktop">COURSES</p>
-          <p class="desktop">Web Development, Mobile Development, iOT, APIs</p>
-        </div>
-      </section>
-      <section class="hero-cta">
-        <div class="image-container">
-          <img class="desktop" src="./images/course-computer-art.jpg" alt="hand holding smart phone">
-        </div>
-        <div class="hero-content">
-          <h3>Computer art</h3>
-          <p class="desktop">COURSES</p>
-          <p class="desktop">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
-        </div>
-      </section>
-      <section class="hero-cta">
-        <div class="image-container">
-          <img class="desktop" src="./images/course-design.jpg" alt="photographer focusing old-style camera">
-        </div>
-        <div class="hero-content">
-          <h3>Design</h3>
-          <p class="desktop">COURSES</p>
-          <p class="desktop">User Experience Design, User Research, Visual Design</p>
-        </div>
-      </section>
+      </div>
+
+      <!-- learning section -->
+      <h2 class="center">Start learning</h2>
+
+    <!-- 6 learning cards in two rows -->
+      <div class="cards-information" id="learning">
         <section class="hero-cta">
           <div class="image-container">
-            <img class="desktop" src="./images/course-data.jpg" alt="laptop with graphs on display">
+            <img class="desktop" src="./images/course-software.jpg" alt="computer screens with code">
           </div>
           <div class="hero-content">
-            <h3>Data</h3>
+            <h3>Software engineering</h3>
             <p class="desktop">COURSES</p>
-            <p class="desktop">Data Science, Big Data, SQL, Data Visualization</p>
+            <p class="desktop">Web Development, Mobile Development, iOT, APIs</p>
           </div>
         </section>
         <section class="hero-cta">
           <div class="image-container">
-            <img class="desktop" src="./images/course-business.jpg" alt="chess pieces">
+            <img class="desktop" src="./images/course-computer-art.jpg" alt="hand holding smart phone">
           </div>
           <div class="hero-content">
-            <h3>Business</h3>
+            <h3>Computer art</h3>
             <p class="desktop">COURSES</p>
-            <p class="desktop">Product Development, Business Development, Startup</p>
+            <p class="desktop">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
           </div>
         </section>
         <section class="hero-cta">
           <div class="image-container">
-            <img class="desktop" src="./images/course-marketing.jpg" alt="display of Apple watch">
+            <img class="desktop" src="./images/course-design.jpg" alt="photographer focusing old-style camera">
           </div>
           <div class="hero-content">
-            <h3>Marketing</h3>
+            <h3>Design</h3>
             <p class="desktop">COURSES</p>
-            <p class="desktop">Analytics, Content Marketing, Mobile Marketing</p>
+            <p class="desktop">User Experience Design, User Research, Visual Design</p>
           </div>
-      </section>
-    </div>
-
-<!-- thesis section with video and two horizontal cards -->
-<!-- video card shown on both desktop and mobile -->
-<!-- adjust the classes to reflect mobile and desktop changes -->
-<!-- add heading -->
-
-
-<h2 class="center">Thesis Exhibits</h2>
-
-<div class="row-container">
-  <div class="card-container" id="video">
-    <section class="card-video desktop card-vertical">
-      <div class="image-container">
-        <video src="./videos/thesis.mp4" controls>Video could not be loaded</video>
+        </section>
+          <section class="hero-cta">
+            <div class="image-container">
+              <img class="desktop" src="./images/course-data.jpg" alt="laptop with graphs on display">
+            </div>
+            <div class="hero-content">
+              <h3>Data</h3>
+              <p class="desktop">COURSES</p>
+              <p class="desktop">Data Science, Big Data, SQL, Data Visualization</p>
+            </div>
+          </section>
+          <section class="hero-cta">
+            <div class="image-container">
+              <img class="desktop" src="./images/course-business.jpg" alt="chess pieces">
+            </div>
+            <div class="hero-content">
+              <h3>Business</h3>
+              <p class="desktop">COURSES</p>
+              <p class="desktop">Product Development, Business Development, Startup</p>
+            </div>
+          </section>
+          <section class="hero-cta">
+            <div class="image-container">
+              <img class="desktop" src="./images/course-marketing.jpg" alt="display of Apple watch">
+            </div>
+            <div class="hero-content">
+              <h3>Marketing</h3>
+              <p class="desktop">COURSES</p>
+              <p class="desktop">Analytics, Content Marketing, Mobile Marketing</p>
+            </div>
+        </section>
       </div>
-      <div class="card-content desktop">
-        <h1>Reimagine urban</h1>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+
+      <!-- thesis section with video and two horizontal cards -->
+      <h2 class="center">Thesis Exhibits</h2>
+
+      <!-- video container -->
+      <div class="row-container">
+        <div class="card-container" id="video">
+          <section class="card-video desktop card-vertical">
+            <div class="image-container">
+              <video src="./videos/thesis.mp4" controls>Video could not be loaded</video>
+            </div>
+            <div class="card-content desktop">
+              <h1>Reimagine urban</h1>
+              <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+            </div>
+          </section>
+        </div>
+
+      <!-- 2 information cards in a vertical stack -->
+        <div class="cards-information" id="thesis">
+          <section class="hero-cta desktop">
+            <div class="image-container">
+              <img class="desktop" src="./images/thesis-fisma.jpg" alt="arm writing on papers">
+            </div>
+            <div class="hero-content">
+              <h3>Fisma: Design and Prototype</h3>
+              <p>Designer showcase of new prototype product</p>
+            </div>
+          </section>
+          <section class="hero-cta desktop">
+            <div class="image-container">
+              <img class="desktop" src="./images/thesis-now-and-then.jpg" alt="Empire State Building">
+            </div>
+            <div class="hero-content">
+              <h3>Now and then</h3>
+              <p>Research study about New York</p>
+            </div>
+          </section>
+        </div>
       </div>
+
+      <!-- footer information -->
+      <footer>
+        <p class="copyright">&copy 2016 Colmar Academy. All rights reserved</p>
+        <span class="desktop right">Terms Privacy</span>
+      </footer>
     </section>
-  </div>
-
-<!-- 2 information cards in a vertical stack -->
-  <div class="cards-information" id="thesis">
-    <section class="hero-cta desktop">
-      <div class="image-container">
-        <img class="desktop" src="./images/thesis-fisma.jpg" alt="arm writing on papers">
-      </div>
-      <div class="hero-content">
-        <h3>Fisma: Design and Prototype</h3>
-        <p>Designer showcase of new prototype product</p>
-      </div>
-    </section>
-    <section class="hero-cta desktop">
-      <div class="image-container">
-        <img class="desktop" src="./images/thesis-now-and-then.jpg" alt="Empire State Building">
-      </div>
-      <div class="hero-content">
-        <h3>Now and then</h3>
-        <p>Research study about New York</p>
-      </div>
-    </section>
-  </div>
-</div>
-
-
-
-
-
-  <footer>
-    <p class="copyright">copy 2016 Colmar Academy. All rights reserved</p>
-    <span class="desktop right">Terms Privacy</span>
-  </footer>
-  </section>
   </body>
 </html>

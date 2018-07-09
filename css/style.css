@@ -1,27 +1,38 @@
-/* refactor all a to be text-decoration: none */
 /* refactor gather up all display:flex items */
 
 .body {
   font-size: 16px;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
   text-decoration: none;
 }
+
+h3, p {
+  margin: .5rem 0;
+}
 .icon {
-  height: 3em;
+  height: 3rem;
   width: auto;
 }
 
 .title {
   text-decoration: none;
   color: black;
-  font-size: 2em;
+  font-size: 2rem;
+}
+
+.name {
+  font-weight: bold;
+  color: brown;
 }
 
 .center {
   text-align: center;
 }
+
+
 /* Base styles that apply to all menus */
 
 .menu ul {
@@ -42,19 +53,19 @@ a {
 }
 
 /* from fotomatic */
-/* remove background-color and bottom border */
+/* remove bottom border */
 header {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 4em;
+  height: 4rem;
   overflow: hidden;
   z-index: 1;
   border-bottom: solid 1px #c6c1c1;
-  background-color: lightblue;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: white;
 }
 
 header .content {
@@ -66,7 +77,7 @@ header .content {
 header .left {
   display: flex;
   align-items: center;
-  padding-left: 1.5em;
+  padding-left: 1.5rem;
 }
 header .logo {
   flex: 1;
@@ -84,13 +95,13 @@ nav a {
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 1em;
+    padding-right: 1.5rem;
 }
 
 .menu li {
     flex: 1 0 auto;
     text-align: center;
-    padding: .6em .5em;
+    padding: .6rem .5rem;
 }
 
 @media screen and (min-width: 680px) {
@@ -135,6 +146,25 @@ header .content {
   top: 4rem; /* To offset for fixed header. */
 }
 
+/* changing all image containers to flex */
+/* verify that all behave properly at all sizes */
+/* move padding to each container by id */
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+img {
+  width: 100%;
+  padding: 0;
+}
+
+
+
+
+
 /* hero styling */
 /* remove border of container*/
 /* adjust width of all items to match spec */
@@ -142,7 +172,7 @@ header .content {
 /* add background color */
 /* figure out font family */
 /* center hero-content vertically */
-/*  */
+/* adjust button color */
 
 .hero-cta {
   display: flex;
@@ -155,18 +185,24 @@ header .content {
 
 .hero-cta img {
   width: 100%;
-  padding: 2em 1.5em;
+  padding: 2rem 1.5rem;
 }
 
 .hero-content {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: left;
   justify-content: center;
-  width: 25%;
-  margin: auto;
+  margin-left: 1rem;
 }
-
+button {
+  width: 75%;
+  height: 2rem;
+  color: white;
+  background-color: brown;
+  padding: .5rem;
+  margin: 2rem 0;
+}
 @media screen and (max-width: 680px) {
   .hero-cta {
     flex-direction: column;
@@ -175,6 +211,7 @@ header .content {
   .hero-cta .image-container {
     margin: auto;
     width: 100%;
+    padding: 0;
   }
 
   .hero-cta img {
@@ -183,9 +220,16 @@ header .content {
   }
 
   .hero-content {
-    padding: 2em 1em;
+    padding: 2rem 1rem;
     margin: auto;
     width: auto;
+  }
+
+  button {
+    width: 100%;
+    height: 2rem;
+    color: white;
+    background-color: brown;
   }
 }
 
@@ -204,11 +248,11 @@ header .content {
 }
 
 #testimonial {
-  margin: 0 1.5em;
+  margin: 0 1.5rem;
 }
 
 .card-vertical img {
-  padding: 2em 0;
+  padding: 2rem 0;
 }
 
 @media screen and (max-width: 680px) {
@@ -236,6 +280,18 @@ header .content {
   flex-direction: column;
   justify-content: space-between;
 }
+
+@media screen and (max-width: 680px) {
+  #campus-info .image-container {
+    padding: 1rem;
+    width: auto;
+  }
+
+  .cards-information .hero-content {
+    margin-left: 1rem;
+  }
+}
+
 
 @media screen and (min-width: 681px) {
   .cards-information .image-container {
@@ -273,6 +329,7 @@ header .content {
 #learning .image-container {
   width: 100%;
   margin: 0;
+  padding: 0;
 }
 #learning img {
   padding: 0;
@@ -312,7 +369,7 @@ header .content {
 footer {
   display: flex;
   justify-content: space-between;
-  padding: 1em 1.5em 3em 1.5em;
+  padding: 1rem 1.5rem 3rem 1.5rem;
   border-top: 1px solid green;
   border-bottom: 1px solid green;
   align-items: center;
