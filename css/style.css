@@ -183,6 +183,13 @@ img {
   background-color: lightgray;
 }
 
+#hero .hero-content {
+  flex: 40%;
+}
+
+#hero .image-container {
+  flex: 60%;
+}
 .hero-cta .image-container {
   width: 60%;
 }
@@ -255,11 +262,18 @@ button {
 }
 
 #testimonial {
-  /* margin: 0 1.5rem; */
+  flex: 60%;
 }
 
+#testimonial .card-content {
+  padding: 0 1.5rem 2rem 1.5rem;
+}
+
+.author {
+  margin-top: 2rem;
+}
 .card-vertical img {
-  padding: 2rem 0;
+  padding: 1rem 0.5rem;
 }
 
 @media screen and (max-width: 680px) {
@@ -282,11 +296,24 @@ button {
   display: flex;
 }
 
+#campus-info {
+  flex: 40%;
+}
+
+#campus-info .image-container {
+  flex: 35%;
+}
+
+#campus-info .hero-cta:nth-of-type(3){
+  background-color: lightgray;
+}
+
 .cards-information {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
 
 @media screen and (max-width: 680px) {
   #campus-info .image-container {
@@ -297,23 +324,23 @@ button {
   .cards-information .hero-content {
     margin-left: 1rem;
   }
-}
 
-
-@media screen and (min-width: 681px) {
-  .cards-information .image-container {
-    width: 30%;
-  }
-  .cards-information .hero-content {
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 680px) {
   .cards-information {
     width: 100%;
   }
 }
+
+
+@media screen and (min-width: 681px) {
+  #campus-info .image-container {
+    width: 30%;
+  }
+  #campus-info .hero-content {
+    width: 50%;
+  }
+}
+
+
 
 /* learning / course section 2 rows of 3 cards for desktop */
 /* vertical stack of links for mobile */
@@ -370,8 +397,6 @@ button {
     background-color: lightgray;
     margin: 0;
  }
-
-
 }
 
 /* thesis section */
@@ -387,6 +412,18 @@ button {
 
 #video .card-content{
   padding: 1rem;
+}
+
+#video {
+  flex: 60%;
+}
+
+#thesis {
+  flex: 40%;
+}
+
+#thesis .image-container {
+  flex: 35%;
 }
 
 @media screen and (max-width: 680px) {
