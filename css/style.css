@@ -403,6 +403,11 @@ button {
   justify-content: flex-start;
 }
 
+#campus-info {
+  margin-top: 1rem;
+  justify-content: flex-start;
+}
+
 @media screen and (max-width: 680px) {
 #thesis {
   display: none;
