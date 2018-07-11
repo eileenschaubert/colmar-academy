@@ -14,23 +14,12 @@ a {
 h3, p {
   margin: .5rem 0;
 }
-.icon {
-  height: 3rem;
-  width: auto;
-}
-
-.title {
-  font-size: 2rem;
-}
-
-.name {
-  font-weight: bold;
-  color: brown;
-}
 
 .center {
   text-align: center;
 }
+
+/* Header Styles */
 
 header {
   position: fixed;
@@ -56,9 +45,25 @@ header .brand {
   align-items: center;
   padding-left: 1.5rem;
 }
+
 header .logo {
   flex: 1;
 }
+
+.icon {
+  height: 3rem;
+  width: auto;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.name {
+  font-weight: bold;
+  color: brown;
+}
+
 
 /* Menus */
 /* Base styles that apply to all menus */
@@ -89,7 +94,7 @@ header .logo {
 	background: blue;
 }
 
-
+/* Styles for Desktop */
 @media screen and (min-width: 680px) {
 .mobile {
   display: none;
@@ -146,10 +151,12 @@ img {
   padding: 0;
 }
 
+.card-vertical {
+  display: flex;
+  flex-direction: column;
+}
 
 /* hero styling */
-/* adjust width of all items to match spec */
-/* style the margins and borders of text box to match spec */
 /* adjust button color */
 
 .hero-cta {
@@ -157,13 +164,6 @@ img {
 }
 
 @media screen and (min-width: 681px) {
-  #hero .image-container {
-    width: 60%;
-    margin: 1rem 0 1rem .5rem;
-  }
-}
-
-
 #hero {
   background-color: lightgray;
 }
@@ -174,17 +174,9 @@ img {
 
 #hero .image-container {
   flex: 60%;
+  padding: 2rem 1.5rem;
 }
-.hero-cta .image-container {
-  width: 60%;
 }
-
-.hero-cta img {
-  width: 100%;
-  /* padding: 2rem 1.5rem; */
-}
-
-
 
 .hero-content {
   display: flex;
@@ -213,11 +205,6 @@ button {
     padding: 0;
   }
 
-  .hero-cta img {
-    padding: 0;
-    margin: auto;
-  }
-
   .hero-content {
     padding: 2rem 1rem;
     margin: auto;
@@ -240,12 +227,6 @@ button {
 /* play with margin on #testimonial once the other stack of cards is placed */
 /* need to determine at which level the 60% width goes on to align with photo */
 
-.card-vertical {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid blue;
-}
-
 #testimonial {
   flex: 60%;
 }
@@ -254,6 +235,15 @@ button {
   padding: 0 1.5rem 2rem 1.5rem;
 }
 
+#testimonial .image-container {
+  padding: 2rem 1rem 2rem 1.5rem;
+}
+#testimonial img {
+  padding: 0;
+}
+#testimonial h1 {
+  margin-top: 0;
+}
 .author {
   margin-top: 2rem;
 }
@@ -296,6 +286,7 @@ button {
 .cards-information {
   display: flex;
   flex-direction: column;
+  margin: 2rem 0;
   justify-content: space-between;
 }
 
@@ -412,9 +403,9 @@ button {
 }
 
 @media screen and (max-width: 680px) {
-  #thesis .desktop {
-    display: none;
-  }
+#thesis {
+  display: none;
+}
 
   #video .image-container {
     padding: 0;
@@ -429,24 +420,19 @@ button {
     padding: 0;
   }
 
-
 }
 
 
-/* footer */
-/* adjust color of border-top */
-/* remove border-bottom */
-/* change copy to symbol */
+/* footer styles */
 footer {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 1.5rem 3rem 1.5rem;
-  border-top: 1px solid green;
-  border-bottom: 1px solid green;
   align-items: center;
+  padding: 1rem 1.5rem 3rem 1.5rem;
+  border-top: 1px solid lightgray;
 }
 
-.right {
+.terms {
   word-spacing: 1rem;
 }
 
