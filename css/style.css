@@ -224,8 +224,6 @@ button {
 /* can't comment out the display:none here for some reason, the card-vertical */
 /* is overriding the desktop media query from earlier, must be because it's flex */
 /* used an id of testimonial to make it work */
-/* play with margin on #testimonial once the other stack of cards is placed */
-/* need to determine at which level the 60% width goes on to align with photo */
 
 #testimonial {
   flex: 60%;
@@ -258,14 +256,8 @@ button {
 }
 
 /* Vertical stack of horizontal cards */
-/* fix size of images to be consistent at 30% */
-/* may need to do a flex property for the 3rd card image */
-/* adjust the size of the cards within the stack at 33% */
-/* card image of top card is aligned with top of vertical card image */
-/* add padding, etc around images and text */
 /* change to mobile image sizes with media query stretches to container*/
 /* mobile images are not flexing into the proper container size */
-
 
 .row-container {
   display: flex;
@@ -400,6 +392,15 @@ button {
 
 #thesis .image-container {
   flex: 35%;
+}
+
+#thesis .hero-cta:nth-of-type(1){
+  background-color: lightgray;
+}
+
+#thesis {
+  margin-top: 1.5rem;
+  justify-content: flex-start;
 }
 
 @media screen and (max-width: 680px) {
